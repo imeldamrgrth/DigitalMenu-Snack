@@ -92,7 +92,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
               required
               rows={3}
               className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-gray-50 resize-none transition-all"
-              placeholder="Jl. Contoh No. 123, Jakarta"
+              placeholder="Contoh: Jl. Mawar No. 123, Jakarta"
             />
           </div>
 
@@ -147,7 +147,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
               onChange={handleChange}
               rows={3}
               className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-gray-50 resize-none transition-all"
-              placeholder="Contoh: Pedas sedang, jangan terlalu manis"
+              placeholder="Contoh: Tolong ekstra cabai rawit hijau yaa"
             />
           </div>
 

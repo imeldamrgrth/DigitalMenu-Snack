@@ -9,49 +9,56 @@ const PRODUCTS: Product[] = [
     {
     id: 'pastel',
     name: 'Pastel',
-    description: 'Pastel goreng renyah, berisi kentang, wortel, dan bihun yang gurih, bikin ketagihan di setiap gigitannya',
+    description: 'Pastel goreng isi sayuran',
     price: 3500,
     image: '/images/products/Pastel.jpg'
   },
   {
     id: 'risol-mayo',
     name: 'Risol Mayo',
-    description: 'Risoles lembut dan gurih, dengan isi telur, kornet sapi, dan saus mayo creamy yang lumer di mulut',
+    description: 'Risol goreng mayo',
     price: 4500,
     image: '/images/products/Risol-mayo.jpg'
   },
   {
     id: 'risol-sayur',
     name: 'Risol Sayur',
-    description: 'Risoles renyah berisi campuran sayuran segar: kentang, wortel, dan bihun, ringan tapi penuh rasa',
+    description: 'Risol goreng isi sayuran',
     price: 4000,
     image: '/images/products/Risol.jpg'
   },
   {
     id: 'lemper-ayam',
     name: 'Lemper Ayam',
-    description: 'Ketan gurih yang dibungkus daun pisang, berisi ayam berbumbu cocok jadi camilan istimewa',
+    description: 'Lemper Ayam Gurih',
     price: 6500,
     image: '/images/products/Lemper-Ayam.jpg'
   },
   {
     id: 'kue-lumpur',
     name: 'Kue Lumpur',
-    description: 'Kue lembut berbahan kentang halus, manis dan creamy meleleh di mulut dengan tekstur sempurna',
+    description: 'Kue kentang halus dengan taburan kismis',
     price: 3500,
     image: '/images/products/KueLumpur.jpg'
   },
   {
     id: 'arem-arem',
     name: 'Arem-arem',
-    description: 'Nasi gulung berisi kentang dan wortel berbumbu ringan, camilan yang lezat dan mengenyangkan',
+    description: 'Nasi gulung berisi kentang dan wortel berbumbu ringan',
     price: 3500,
     image: '/images/products/arem-arem.jpg'
   },
   {
-    id: 'dadar-gulung',
-    name: 'Dadar Gulung',
-    description: 'Dadar gulung lembut, berisi kelapa parut dengan gula merah yang harum, manisnya pas di lidah',
+    id: 'dadar-gulung-og',
+    name: 'Dadar Gulung Original',
+    description: 'Kelapa parut dengan gula merah yang harum, manisnya pas di lidah',
+    price: 3500,
+    image: '/images/products/Dadar-Gulung.jpg'
+  },
+  {
+    id: 'dadar-gulung-coklat',
+    name: 'Dadar Gulung Coklat',
+    description: 'Fla coklat lumer, favorit anak-anak',
     price: 3500,
     image: '/images/products/Dadar-Gulung.jpg'
   },
