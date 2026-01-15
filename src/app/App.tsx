@@ -11,68 +11,68 @@ const PRODUCTS: Product[] = [
     name: 'Pastel',
     description: 'Pastel goreng renyah, berisi kentang, wortel, dan bihun yang gurih, bikin ketagihan di setiap gigitannya',
     price: 3500,
-    image: './images/products/Pastel.jpg'
+    image: '/images/products/Pastel.jpg'
   },
   {
     id: 'risol-mayo',
     name: 'Risol Mayo',
     description: 'Risoles lembut dan gurih, dengan isi telur, kornet sapi, dan saus mayo creamy yang lumer di mulut',
     price: 4500,
-    image: './images/products/Risol-mayo.jpg'
+    image: '/images/products/Risol-mayo.jpg'
   },
   {
     id: 'risol-sayur',
     name: 'Risol Sayur',
     description: 'Risoles renyah berisi campuran sayuran segar: kentang, wortel, dan bihun, ringan tapi penuh rasa',
     price: 4000,
-    image: './images/products/Risol.jpg'
+    image: '/images/products/Risol.jpg'
   },
   {
     id: 'lemper-ayam',
     name: 'Lemper Ayam',
     description: 'Ketan gurih yang dibungkus daun pisang, berisi ayam berbumbu cocok jadi camilan istimewa',
     price: 6500,
-    image: './images/products/Lemper-Ayam.jpg'
+    image: '/images/products/Lemper-Ayam.jpg'
   },
   {
     id: 'kue-lumpur',
     name: 'Kue Lumpur',
     description: 'Kue lembut berbahan kentang halus, manis dan creamy meleleh di mulut dengan tekstur sempurna',
     price: 3500,
-    image: './images/products/KueLumpur.jpg'
+    image: '/images/products/KueLumpur.jpg'
   },
   {
     id: 'arem-arem',
     name: 'Arem-arem',
     description: 'Nasi gulung berisi kentang dan wortel berbumbu ringan, camilan yang lezat dan mengenyangkan',
     price: 3500,
-    image: './images/products/arem-arem.jpg'
+    image: '/images/products/arem-arem.jpg'
   },
   {
     id: 'dadar-gulung',
     name: 'Dadar Gulung',
     description: 'Dadar gulung lembut, berisi kelapa parut dengan gula merah yang harum, manisnya pas di lidah',
     price: 3500,
-    image: './images/products/Dadar-Gulung.jpg'
+    image: '/images/products/Dadar-Gulung.jpg'
   },
   {
     id: 'wajik',
     name: 'Wajik',
     description: 'Ketan manis legit berpadu dengan aroma karamel gula merah, setiap gigitannya bikin nostalgia',
     price: 3500,
-    image: './images/products/wajik.jpg'
+    image: '/images/products/wajik.jpg'
   },
   {
     id: 'wingko',
     name: 'Wingko',
     description: 'Kue tradisional berbahan ketan dan kelapa manis dengan aroma panggang khas',
     price: 3500,
-    image: './images/products/Wingko.jpg'
+    image: '/images/products/Wingko.jpg'
   }
 ];
 
 // WhatsApp business number 
-const WHATSAPP_NUMBER = '6288239236180';
+const WHATSAPP_NUMBER = '6281219892200';
 
 function App() {
   const [cart, setCart] = useState<Record<string, number>>({});
@@ -200,7 +200,7 @@ function App() {
       {/* Hero Section */}
       <div className="relative h-[45vh] max-h-[400px] min-h-[300px] bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden">
         <ImageWithFallback
-            src="./images/hero-imel-snack.jpg"
+            src="/images/hero-imel-snack.jpg"
             alt="Imel Snack - Kue Basah Tradisional"
             className="w-full h-full object-cover"
           />
