@@ -37,7 +37,7 @@ const PRODUCTS: Product[] = [
   {
     id: 'kue-lumpur',
     name: 'Kue Lumpur',
-    description: 'Kue kentang halus dengan taburan kismis',
+    description: 'Kue kentang halus dengan kismis',
     price: 3500,
     image: '/images/products/KueLumpur.jpg'
   },
@@ -50,17 +50,17 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'dadar-gulung-og',
-    name: 'Dadar Gulung Original',
-    description: 'Kelapa parut dengan gula merah yang harum, manisnya pas di lidah',
+    name: 'DarLung OG',
+    description: 'Dadar gulung original',
     price: 3500,
     image: '/images/products/Dadar-Gulung.jpg'
   },
   {
     id: 'dadar-gulung-coklat',
-    name: 'Dadar Gulung Coklat',
-    description: 'Fla coklat lumer, favorit anak-anak',
+    name: 'DarLung Coklat',
+    description: 'Dadar gulung vla coklat',
     price: 3500,
-    image: '/images/products/Dadar-Gulung.jpg'
+    image: '/images/products/darlung-coklat.jpg'
   },
   {
     id: 'wajik',
