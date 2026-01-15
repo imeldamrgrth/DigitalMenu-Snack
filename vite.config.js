@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: '/',  // absolute path untuk deployment di domain root
+  publicDir: 'public',  // folder public untuk static assets
   plugins: [
     react(),
     tailwindcss(),
