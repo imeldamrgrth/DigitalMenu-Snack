@@ -221,9 +221,9 @@ function App() {
   const { totalItems, totalPrice } = calculateTotals();
 
   return (
-    <div className="min-h-screen bg-[#FAF8F3]">
+    <div className="min-h-screen bg-[#FAF8F3] overflow-x-hidden w-full">
       {/* Hero Section */}
-      <div className="relative h-[45vh] max-h-[400px] min-h-[300px] bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden">
+      <div className="relative h-[45vh] max-h-[400px] min-h-[300px] bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden w-full">
         <ImageWithFallback
             src="/images/hero-logo02.jpeg"
             alt="Imel Snack - Kue Basah Tradisional"
