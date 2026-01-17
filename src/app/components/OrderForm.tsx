@@ -40,7 +40,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-end md:items-center justify-center z-[100] p-0 md:p-4">
-      <div className="bg-white rounded-t-3xl md:rounded-3xl w-full md:max-w-md max-h-[60vh] md:max-h-[92vh] overflow-hidden flex flex-col shadow-2xl animate-in slide-in-from-bottom duration-300">
+      <div className="bg-white rounded-t-3xl md:rounded-3xl w-full md:max-w-md max-h-[70vh] md:max-h-[92vh] overflow-hidden flex flex-col shadow-2xl animate-in slide-in-from-bottom duration-300">
         {/* Header */}
         <div className="sticky top-0 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-5 flex items-center justify-between rounded-t-3xl">
           <div>
