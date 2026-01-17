@@ -39,8 +39,8 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-end md:items-center justify-center z-[100] p-0 md:p-4">
-      <div className="bg-white rounded-t-3xl md:rounded-3xl w-full max-w-md max-h-[92vh] overflow-hidden flex flex-col shadow-2xl animate-in slide-in-from-bottom duration-300">
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-end md:items-center justify-center z-[100] p-0 md:p-4 animate-in fade-in duration-200">
+      <div className="bg-white rounded-t-3xl md:rounded-3xl w-full max-w-md max-h-[92vh] overflow-hidden flex flex-col shadow-2xl animate-in slide-in-from-bottom-5 duration-500 ease-out">
         {/* Header */}
         <div className="sticky top-0 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-5 flex items-center justify-between rounded-t-3xl">
           <div>
@@ -59,7 +59,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
         {/* Form */}
         <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-5">
           {/* Name Field */}
-          <div>
+          <div className="animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out" style={{ animationDelay: '100ms' }}>
             <label htmlFor="name" className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
               <User className="w-4 h-4 text-amber-600" />
               Nama Lengkap
@@ -78,7 +78,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
           </div>
 
           {/* Address Field */}
-          <div>
+          <div className="animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out" style={{ animationDelay: '150ms' }}>
             <label htmlFor="address" className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
               <MapPin className="w-4 h-4 text-amber-600" />
               Alamat Lengkap
@@ -97,7 +97,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
           </div>
 
           {/* Order Date Field */}
-          <div>
+          <div className="animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out" style={{ animationDelay: '200ms' }}>
             <label htmlFor="orderDate" className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
               <Calendar className="w-4 h-4 text-amber-600" />
               Tanggal Pengambilan
@@ -116,7 +116,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
           </div>
 
           {/* Delivery Time Field */}
-          <div>
+          <div className="animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out" style={{ animationDelay: '250ms' }}>
             <label htmlFor="deliveryTime" className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
               <Clock className="w-4 h-4 text-amber-600" />
               Waktu Pengambilan
@@ -134,7 +134,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
           </div>
 
           {/* Notes Field */}
-          <div>
+          <div className="animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out" style={{ animationDelay: '300ms' }}>
             <label htmlFor="notes" className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
               <FileText className="w-4 h-4 text-amber-600" />
               Catatan
@@ -152,7 +152,7 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
           </div>
 
           {/* Info Box */}
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 animate-in fade-in slide-in-from-bottom-3 duration-500 ease-out" style={{ animationDelay: '350ms' }}>
             <p className="text-xs text-amber-900 leading-relaxed">
               💡 <span className="font-semibold">Info:</span> Pesanan akan dikirim ke WhatsApp untuk konfirmasi. Anda juga akan mendapat link Google Calendar untuk reminder.
             </p>

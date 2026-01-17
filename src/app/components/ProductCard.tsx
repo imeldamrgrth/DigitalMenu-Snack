@@ -6,6 +6,7 @@ export interface Product {
   description: string;
   price: number;
   image: string;
+  minimalPembelian?: number;
 }
 
 interface ProductCardProps {
@@ -17,12 +18,19 @@ interface ProductCardProps {
 export function ProductCard({ product, quantity, onQuantityChange }: ProductCardProps) {
   const handleDecrease = () => {
     if (quantity > 0) {
-      onQuantityChange(product.id, quantity - 1);
+      const minimalPembelian = product.minimalPembelian || 0;
+      // Jika quantity sama dengan minimal pembelian, langsung ke 0
+      // Jika lebih dari minimal, kurangi 1
+      const nextQuantity = quantity === minimalPembelian ? 0 : quantity - 1;
+      onQuantityChange(product.id, nextQuantity);
     }
   };
 
   const handleIncrease = () => {
-    onQuantityChange(product.id, quantity + 1);
+    const nextQuantity = quantity === 0 && product.minimalPembelian 
+      ? product.minimalPembelian 
+      : quantity + 1;
+    onQuantityChange(product.id, nextQuantity);
   };
 
   return (
@@ -48,9 +56,14 @@ export function ProductCard({ product, quantity, onQuantityChange }: ProductCard
             <p className="text-xs text-gray-600 line-clamp-2 mb-2">
               {product.description}
             </p>
-            <p className="font-bold text-amber-700 text-base">
+            <p className="font-bold text-amber-700 text-base mb-1">
               Rp {product.price.toLocaleString('id-ID')}
             </p>
+            {product.minimalPembelian && (
+              <p className="text-xs font-semibold text-amber-700">
+                Min. Pembelian: {product.minimalPembelian}
+              </p>
+            )}
           </div>
         </div>
 
