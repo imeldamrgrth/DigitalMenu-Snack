@@ -61,7 +61,7 @@ export function ProductCard({ product, quantity, onQuantityChange }: ProductCard
             </p>
             {product.minimalPembelian && (
               <p className="text-xs font-semibold text-amber-700">
-                Min: {product.minimalPembelian}
+                Min. Pembelian : {product.minimalPembelian}
               </p>
             )}
           </div>
