@@ -5,11 +5,11 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "destination": "/assets/$1"
+      "dest": "/assets/$1"
     },
     {
       "src": "/(.*)",
-      "destination": "/index.html"
+      "dest": "/index.html"
     }
   ]
 }
