@@ -221,12 +221,12 @@ function App() {
   const { totalItems, totalPrice } = calculateTotals();
 
   return (
-    <div className="min-h-screen bg-[#FAF8F3] overflow-x-hidden w-full">
+    <div className="min-h-screen bg-[#FAF8F3] overflow-x-hidden w-screen max-w-full flex flex-col">
       {/* Hero Section */}
-      <div className="relative h-[45vh] max-h-[400px] min-h-[300px] bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden w-full">
+      <div className="relative h-[45vh] max-h-[400px] min-h-[300px] bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden flex-shrink-0 w-full">
         <ImageWithFallback
             src="/images/hero-logo02.jpeg"
-            alt="Imel Snack - Kue Basah Tradisional"
+            alt="Menu"
             className="w-full h-full object-cover"
           />
 
@@ -234,17 +234,17 @@ function App() {
       </div>
 
       {/* Main Content - Overlapping Card */}
-      <div className="relative -mt-8 px-3 sm:px-4 pb-32">
-        <div className="bg-white rounded-t-3xl shadow-xl p-4 sm:p-6 min-h-[60vh] max-w-full">
+      <div className="relative -mt-8 px-3 sm:px-4 pb-32 flex-1 w-full">
+        <div className="bg-white rounded-t-3xl shadow-xl p-3 sm:p-5 min-h-[60vh] w-full">
           {/* Section Title */}
-          <div className="mb-6">
-            <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1">Menu Hari Ini</h2>
-            <p className="text-xs sm:text-sm text-gray-600">Pilih kue kesukaan Anda</p>
-            <p className="text-xs text-amber-700 font-semibold mt-2">⚠️ PO kue minimal H-2, kecuali Pastel</p>
+          <div className="mb-5">
+            <h2 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">Menu Hari Ini</h2>
+            <p className="text-xs text-gray-600">Pilih kue kesukaan Anda</p>
+            <p className="text-xs text-amber-700 font-semibold mt-1.5">⚠️ PO kue minimal H-2, kecuali Pastel</p>
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 gap-2 sm:gap-3">
             {PRODUCTS.map(product => (
               <ProductCard
                 key={product.id}
