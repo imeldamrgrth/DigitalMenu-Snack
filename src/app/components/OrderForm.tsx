@@ -39,8 +39,8 @@ export function OrderForm({ onSubmit, onClose }: OrderFormProps) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-end md:items-center justify-center z-[100] p-0 md:p-4 pb-[env(safe-area-inset-bottom)]">
-      <div className="bg-white rounded-t-3xl md:rounded-3xl w-full max-w-md max-h-[85dvh] flex flex-col shadow-2xl animate-in slide-in-from-bottom duration-300">
+    <div className="fixed inset-0  bg-black/70 backdrop-blur-sm - flex items-end md:items-center + flex items-center justify-center z-[100] - p-0 md:p-4 + px-3 pt-[max(1rem,env(safe-area-inset-top))] pb-[env(safe-area-inset-bottom)]">
+      <div className="bg-white rounded-t-3xl md:rounded-3xl + overflow-hidden w-full max-w-md + max-h-[85svh] flex flex-col shadow-2xl animate-in slide-in-from-bottom duration-300">
         {/* Header */}
         <div className="sticky top-0 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-5 flex items-center justify-between rounded-t-3xl">
           <div>
