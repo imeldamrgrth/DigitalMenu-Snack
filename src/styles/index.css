@@ -1,31 +1,3 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
-/* Smooth Modal Transitions */
-@keyframes slideInFromBottom {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-modal-in {
-  animation: slideInFromBottom 500ms ease-out forwards;
-}
-
-.animate-backdrop-in {
-  animation: fadeIn 200ms ease-out forwards;
-}
