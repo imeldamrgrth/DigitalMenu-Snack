@@ -35,10 +35,10 @@ export function ProductCard({ product, quantity, onQuantityChange }: ProductCard
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-      <div className="flex gap-4 p-4">
+      <div className="flex gap-2 sm:gap-4 p-3 sm:p-4">
         {/* Product Image */}
         <div className="flex-shrink-0">
-          <div className="w-24 h-24 rounded-xl overflow-hidden bg-gray-100">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden bg-gray-100">
             <img 
               src={product.image} 
               alt={product.name}
@@ -50,46 +50,46 @@ export function ProductCard({ product, quantity, onQuantityChange }: ProductCard
         {/* Product Details */}
         <div className="flex-1 flex flex-col justify-between min-w-0">
           <div>
-            <h3 className="font-semibold text-gray-900 text-base mb-0.5 truncate">
+            <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-0.5 truncate">
               {product.name}
             </h3>
-            <p className="text-xs text-gray-600 line-clamp-2 mb-2">
+            <p className="text-xs text-gray-600 line-clamp-2 mb-1 sm:mb-2">
               {product.description}
             </p>
-            <p className="font-bold text-amber-700 text-base mb-1">
+            <p className="font-bold text-amber-700 text-sm sm:text-base mb-0.5 sm:mb-1">
               Rp {product.price.toLocaleString('id-ID')}
             </p>
             {product.minimalPembelian && (
               <p className="text-xs font-semibold text-amber-700">
-                Min. Pembelian: {product.minimalPembelian}
+                Min: {product.minimalPembelian}
               </p>
             )}
           </div>
         </div>
 
         {/* Quantity Controls */}
-        <div className="flex-shrink-0 flex flex-col items-center justify-center gap-2">
+        <div className="flex-shrink-0 flex flex-col items-center justify-center gap-1 sm:gap-2">
           <button
             onClick={handleDecrease}
             disabled={quantity === 0}
-            className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors active:scale-95"
+            className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center transition-colors active:scale-95"
             aria-label="Kurangi"
           >
-            <Minus className="w-4 h-4 text-gray-700" />
+            <Minus className="w-3 h-3 sm:w-4 sm:h-4 text-gray-700" />
           </button>
           
-          <div className="w-10 h-8 flex items-center justify-center">
-            <span className="font-semibold text-base text-gray-900">
+          <div className="w-8 h-7 sm:w-10 sm:h-8 flex items-center justify-center">
+            <span className="font-semibold text-sm sm:text-base text-gray-900">
               {quantity}
             </span>
           </div>
           
           <button
             onClick={handleIncrease}
-            className="w-8 h-8 rounded-full bg-amber-600 hover:bg-amber-700 flex items-center justify-center transition-colors active:scale-95 shadow-sm"
+            className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-600 hover:bg-amber-700 flex items-center justify-center transition-colors active:scale-95 shadow-sm"
             aria-label="Tambah"
           >
-            <Plus className="w-4 h-4 text-white" />
+            <Plus className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
           </button>
         </div>
       </div>

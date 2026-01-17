@@ -234,17 +234,17 @@ function App() {
       </div>
 
       {/* Main Content - Overlapping Card */}
-      <div className="relative -mt-8 px-4 pb-32">
-        <div className="bg-white rounded-t-3xl shadow-xl p-6 min-h-[60vh]">
+      <div className="relative -mt-8 px-3 sm:px-4 pb-32">
+        <div className="bg-white rounded-t-3xl shadow-xl p-4 sm:p-6 min-h-[60vh] max-w-full">
           {/* Section Title */}
           <div className="mb-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">Menu Hari Ini</h2>
-            <p className="text-sm text-gray-600">Pilih kue kesukaan Anda</p>
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1">Menu Hari Ini</h2>
+            <p className="text-xs sm:text-sm text-gray-600">Pilih kue kesukaan Anda</p>
             <p className="text-xs text-amber-700 font-semibold mt-2">⚠️ PO kue minimal H-2, kecuali Pastel</p>
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-3 sm:gap-4">
             {PRODUCTS.map(product => (
               <ProductCard
                 key={product.id}
