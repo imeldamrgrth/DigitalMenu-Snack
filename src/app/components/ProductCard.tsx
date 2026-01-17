@@ -60,7 +60,7 @@ export function ProductCard({ product, quantity, onQuantityChange }: ProductCard
               Rp {product.price.toLocaleString('id-ID')}
             </p>
             {product.minimalPembelian && (
-              <p className="text-xs font-semibold text-amber-700">
+              <p className="text-xs text-amber-700">
                 Min. Pembelian : {product.minimalPembelian}
               </p>
             )}
